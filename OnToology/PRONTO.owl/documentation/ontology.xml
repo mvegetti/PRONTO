@@ -1,0 +1,891 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ProntoAHSH="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#BelongsToCstructure -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#BelongsToCstructure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VarinantSetMembership -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VarinantSetMembership">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasProducts"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aComponet -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aComponet">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsComponentIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aDerivative -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aDerivative">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsDerivativeIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#affectedRelation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#affectedRelation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedChange -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedChange">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedModification -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedModification">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isModifiedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToDStructure -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToDStructure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToSet -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToSet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedChange"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#componentOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#componentOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#components -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#components">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#BelongsToCstructure"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#definesStructureOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#definesStructureOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivativeOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivativeOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isDerivedInto"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivatives -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivatives">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToDStructure"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#has -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#has">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#definesStructureOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasMembers -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasMembers">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasProducts -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasProducts">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasRestriction -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasRestriction">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#restricts"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasStructure -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasStructure">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#structureOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isAffectedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isAffectedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#affectedRelation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isComposedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isComposedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#componentOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isDerivedInto -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isDerivedInto">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsComponentIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsComponentIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsDerivativeIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsDerivativeIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isModifiedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isModifiedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isTypeOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isTypeOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#relationType -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#relationType">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isTypeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#restricts -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#restricts">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#structureOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#structureOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasStructure"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasMembers"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CProduct -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SVariantSet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ComponetOf -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ComponetOf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SHRelation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DerivativeOf"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DerivativeOf -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DerivativeOf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SHRelation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#IncopatibleRest -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#IncopatibleRest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RestrictionType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRest -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RestrictionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#OptionalRel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#OptionalRel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductionFactorCh -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductionFactorCh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityPerunitCh"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductionFactorCh"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityPerunitCh"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityPerunitCh -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityPerunitCh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#OptionalRel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SelectiveRel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RestrictionType -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RestrictionType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#IncopatibleRest"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRest"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SFamily -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SFamily">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SHRelation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SHRelation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ComponetOf"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DerivativeOf"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SProduct -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SVariantSet -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SVariantSet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SelectiveRel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SelectiveRel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"/>
+        <hasMembers rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#v1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#v1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#v1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"/>
+        <memberOf rdf:resource="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#OptionalRel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SelectiveRel"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

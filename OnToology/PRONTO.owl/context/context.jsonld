@@ -1,0 +1,242 @@
+{
+  "@context" : {
+    "CStructure" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure"
+    },
+    "CProduct" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CProduct"
+    },
+    "IncopatibleRest" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#IncopatibleRest"
+    },
+    "DRelation" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "appliedModification" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedModification",
+      "@type" : "@id"
+    },
+    "Product" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product"
+    },
+    "ProductionFactorCh" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductionFactorCh"
+    },
+    "isDerivedInto" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isDerivedInto",
+      "@type" : "@id"
+    },
+    "isIdentifiedAsDerivativeIn" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsDerivativeIn",
+      "@type" : "@id"
+    },
+    "FamilySpecification" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification"
+    },
+    "ChangeSet" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet"
+    },
+    "SProduct" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SProduct"
+    },
+    "definesStructureOf" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#definesStructureOf",
+      "@type" : "@id"
+    },
+    "VariantSet" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"
+    },
+    "SelectiveRel" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SelectiveRel"
+    },
+    "isComposedBy" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isComposedBy",
+      "@type" : "@id"
+    },
+    "restricts" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#restricts",
+      "@type" : "@id"
+    },
+    "Relation" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation"
+    },
+    "structureOf" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#structureOf",
+      "@type" : "@id"
+    },
+    "derivatives" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivatives",
+      "@type" : "@id"
+    },
+    "MandatoryRest" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRest"
+    },
+    "PRestriction" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "isAffectedBy" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isAffectedBy",
+      "@type" : "@id"
+    },
+    "VRestriction" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction"
+    },
+    "relationType" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#relationType",
+      "@type" : "@id"
+    },
+    "componentOf" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#componentOf",
+      "@type" : "@id"
+    },
+    "Family" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"
+    },
+    "belongsToDStructure" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToDStructure",
+      "@type" : "@id"
+    },
+    "SVariantSet" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SVariantSet"
+    },
+    "hasProducts" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasProducts",
+      "@type" : "@id"
+    },
+    "Change" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change"
+    },
+    "hasRestriction" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasRestriction",
+      "@type" : "@id"
+    },
+    "isTypeOf" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isTypeOf",
+      "@type" : "@id"
+    },
+    "QuantityPerunitCh" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityPerunitCh"
+    },
+    "ComponetOf" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ComponetOf"
+    },
+    "RestrictionType" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RestrictionType"
+    },
+    "isIdentifiedAsComponentIn" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsComponentIn",
+      "@type" : "@id"
+    },
+    "Restriction" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction"
+    },
+    "FRestriction" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction"
+    },
+    "isModifiedBy" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isModifiedBy",
+      "@type" : "@id"
+    },
+    "BelongsToCstructure" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#BelongsToCstructure",
+      "@type" : "@id"
+    },
+    "CVariantSet" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet"
+    },
+    "appliedChange" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedChange",
+      "@type" : "@id"
+    },
+    "CFamily" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily"
+    },
+    "derivativeOf" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivativeOf",
+      "@type" : "@id"
+    },
+    "DerivativeOf" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DerivativeOf"
+    },
+    "affectedRelation" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#affectedRelation",
+      "@type" : "@id"
+    },
+    "DStructure" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure"
+    },
+    "components" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#components",
+      "@type" : "@id"
+    },
+    "SHRelation" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SHRelation"
+    },
+    "has" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#has",
+      "@type" : "@id"
+    },
+    "memberOf" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf",
+      "@type" : "@id"
+    },
+    "CRelation" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation"
+    },
+    "SFamily" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SFamily"
+    },
+    "RelationType" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType"
+    },
+    "aComponet" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aComponet",
+      "@type" : "@id"
+    },
+    "VarinantSetMembership" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VarinantSetMembership",
+      "@type" : "@id"
+    },
+    "QuantityChange" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange"
+    },
+    "MandatoryRel" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRel"
+    },
+    "Structure" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure"
+    },
+    "hasStructure" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasStructure",
+      "@type" : "@id"
+    },
+    "OptionalRel" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#OptionalRel"
+    },
+    "aDerivative" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aDerivative",
+      "@type" : "@id"
+    },
+    "belongsToSet" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToSet",
+      "@type" : "@id"
+    },
+    "ProductAbstraction" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"
+    },
+    "FamilyRemoval" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval"
+    },
+    "hasMembers" : {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasMembers",
+      "@type" : "@id"
+    }
+  }
+}

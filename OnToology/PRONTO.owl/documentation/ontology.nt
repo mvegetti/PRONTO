@@ -1,0 +1,534 @@
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#BelongsToCstructure
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#BelongsToCstructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#BelongsToCstructure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#BelongsToCstructure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VarinantSetMembership
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VarinantSetMembership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VarinantSetMembership> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasProducts> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VarinantSetMembership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VarinantSetMembership> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VarinantSetMembership> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aComponet
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aComponet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aComponet> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsComponentIn> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aComponet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aComponet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aComponet> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aDerivative
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aDerivative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aDerivative> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsDerivativeIn> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aDerivative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aDerivative> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aDerivative> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#affectedRelation
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#affectedRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#affectedRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#affectedRelation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#affectedRelation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedChange
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedChange> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedChange> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedModification
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedModification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedModification> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isModifiedBy> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedModification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedModification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedModification> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToDStructure
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToDStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToDStructure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToDStructure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToSet
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToSet> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToSet> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedChange> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToSet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToSet> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#componentOf
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#componentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#componentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#componentOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#componentOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#components
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#components> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#components> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#BelongsToCstructure> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#components> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#components> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#definesStructureOf
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#definesStructureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#definesStructureOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#definesStructureOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivativeOf
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivativeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivativeOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isDerivedInto> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivativeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivativeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivativeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivatives
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivatives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivatives> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToDStructure> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivatives> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivatives> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#has
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#has> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#has> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#definesStructureOf> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#has> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#has> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#has> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasMembers
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasMembers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasMembers> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasMembers> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasMembers> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasProducts
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasProducts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasProducts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasProducts> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasProducts> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasRestriction
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasRestriction> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#restricts> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasRestriction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasRestriction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasStructure
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasStructure> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#structureOf> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasStructure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasStructure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isAffectedBy
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isAffectedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isAffectedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#affectedRelation> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isAffectedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isAffectedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isComposedBy
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isComposedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isComposedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#componentOf> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isComposedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isComposedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isComposedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isDerivedInto
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isDerivedInto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isDerivedInto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isDerivedInto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isDerivedInto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsComponentIn
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsComponentIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsComponentIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsComponentIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsDerivativeIn
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsDerivativeIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsDerivativeIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsDerivativeIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isModifiedBy
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isModifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isModifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isModifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isTypeOf
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#relationType
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#relationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#relationType> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isTypeOf> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#relationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#relationType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#relationType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#restricts
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#restricts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#restricts> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#restricts> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#structureOf
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#structureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#structureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#structureOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#structureOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasStructure> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasMembers> .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SFamily> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CProduct
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CProduct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CProduct> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SProduct> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf> .
+_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SVariantSet> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ComponetOf
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ComponetOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ComponetOf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SHRelation> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ComponetOf> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DerivativeOf> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DerivativeOf
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DerivativeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DerivativeOf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SHRelation> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#IncopatibleRest
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#IncopatibleRest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#IncopatibleRest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RestrictionType> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#IncopatibleRest> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRest> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRel
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRest
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RestrictionType> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#OptionalRel
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#OptionalRel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#OptionalRel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductionFactorCh
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductionFactorCh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductionFactorCh> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductionFactorCh> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityPerunitCh> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductionFactorCh> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityPerunitCh> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityPerunitCh
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityPerunitCh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityPerunitCh> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid15 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRel> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#OptionalRel> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SelectiveRel> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RestrictionType
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RestrictionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RestrictionType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid23 <http://www.w3.org/2002/07/owl#unionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#IncopatibleRest> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRest> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SFamily
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SFamily> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SHRelation
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SHRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SHRelation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid26 <http://www.w3.org/2002/07/owl#unionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ComponetOf> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DerivativeOf> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SProduct
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SProduct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SVariantSet
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SVariantSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SVariantSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SelectiveRel
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SelectiveRel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SelectiveRel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid29 <http://www.w3.org/2002/07/owl#unionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction> .
+# 
+# http://www.w3.org/2002/07/owl#Thing
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f1
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f2
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f2> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasMembers> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#v1> .
+# 
+# http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#v1
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet> .
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#v1> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f2> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid32 <http://www.w3.org/2002/07/owl#members> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid36 <http://www.w3.org/2002/07/owl#members> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid40 <http://www.w3.org/2002/07/owl#members> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid44 <http://www.w3.org/2002/07/owl#members> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRel> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#OptionalRel> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SelectiveRel> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
