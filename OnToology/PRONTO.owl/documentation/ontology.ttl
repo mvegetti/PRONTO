@@ -1,0 +1,540 @@
+@prefix : <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl> .
+
+<http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#BelongsToCstructure
+:BelongsToCstructure rdf:type owl:ObjectProperty ;
+                     rdfs:domain :CRelation ;
+                     rdfs:range :CStructure .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VarinantSetMembership
+:VarinantSetMembership rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :hasProducts ;
+                       rdf:type owl:FunctionalProperty ;
+                       rdfs:domain :Product ;
+                       rdfs:range :VariantSet .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aComponet
+:aComponet rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isIdentifiedAsComponentIn ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain :CRelation ;
+           rdfs:range :Family .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aDerivative
+:aDerivative rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isIdentifiedAsDerivativeIn ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :DRelation ;
+             rdfs:range :Family .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#affectedRelation
+:affectedRelation rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Change ;
+                  rdfs:range :Relation .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedChange
+:appliedChange rdf:type owl:ObjectProperty ;
+               rdfs:domain :ChangeSet ;
+               rdfs:range :Change .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedModification
+:appliedModification rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :isModifiedBy ;
+                     rdf:type owl:FunctionalProperty ;
+                     rdfs:domain :CVariantSet ;
+                     rdfs:range :ChangeSet .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToDStructure
+:belongsToDStructure rdf:type owl:ObjectProperty ;
+                     rdfs:domain :DRelation ;
+                     rdfs:range :DStructure .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToSet
+:belongsToSet rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              owl:inverseOf :appliedChange ;
+              rdfs:domain :Change ;
+              rdfs:range :ChangeSet .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#componentOf
+:componentOf rdf:type owl:ObjectProperty ,
+                      owl:TransitiveProperty ;
+             rdfs:domain :ProductAbstraction ;
+             rdfs:range :ProductAbstraction .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#components
+:components rdf:type owl:ObjectProperty ;
+            owl:inverseOf :BelongsToCstructure ;
+            rdfs:domain :CStructure ;
+            rdfs:range :CRelation .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#definesStructureOf
+:definesStructureOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Structure ;
+                    rdfs:range :CVariantSet .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivativeOf
+:derivativeOf rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isDerivedInto ;
+              rdf:type owl:TransitiveProperty ;
+              rdfs:domain :ProductAbstraction ;
+              rdfs:range :ProductAbstraction .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivatives
+:derivatives rdf:type owl:ObjectProperty ;
+             owl:inverseOf :belongsToDStructure ;
+             rdfs:domain :DStructure ;
+             rdfs:range :DRelation .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#has
+:has rdf:type owl:ObjectProperty ;
+     owl:inverseOf :definesStructureOf ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:domain :CVariantSet ;
+     rdfs:range :Structure .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasMembers
+:hasMembers rdf:type owl:ObjectProperty ;
+            owl:inverseOf :memberOf ;
+            rdfs:domain :Family ;
+            rdfs:range :VariantSet .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasProducts
+:hasProducts rdf:type owl:ObjectProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:domain :VariantSet ;
+             rdfs:range :Product .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasRestriction
+:hasRestriction rdf:type owl:ObjectProperty ;
+                owl:inverseOf :restricts ;
+                rdfs:domain :ProductAbstraction ;
+                rdfs:range :Restriction .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasStructure
+:hasStructure rdf:type owl:ObjectProperty ;
+              owl:inverseOf :structureOf ;
+              rdf:type owl:InverseFunctionalProperty ;
+              rdfs:domain :CFamily ;
+              rdfs:range :Structure .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isAffectedBy
+:isAffectedBy rdf:type owl:ObjectProperty ;
+              owl:inverseOf :affectedRelation ;
+              rdfs:domain :Relation ;
+              rdfs:range :Change .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isComposedBy
+:isComposedBy rdf:type owl:ObjectProperty ;
+              owl:inverseOf :componentOf ;
+              rdf:type owl:TransitiveProperty ;
+              rdfs:domain :ProductAbstraction ;
+              rdfs:range :ProductAbstraction .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isDerivedInto
+:isDerivedInto rdf:type owl:ObjectProperty ,
+                        owl:TransitiveProperty ;
+               rdfs:domain :ProductAbstraction ;
+               rdfs:range :ProductAbstraction .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsComponentIn
+:isIdentifiedAsComponentIn rdf:type owl:ObjectProperty ;
+                           rdfs:domain :Family ;
+                           rdfs:range :CRelation .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsDerivativeIn
+:isIdentifiedAsDerivativeIn rdf:type owl:ObjectProperty ;
+                            rdfs:domain :Family ;
+                            rdfs:range :DRelation .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isModifiedBy
+:isModifiedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :ChangeSet ;
+              rdfs:range :CVariantSet .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isTypeOf
+:isTypeOf rdf:type owl:ObjectProperty ;
+          rdfs:domain :RelationType ;
+          rdfs:range :Relation .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf
+:memberOf rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :VariantSet ;
+          rdfs:range :Family .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#relationType
+:relationType rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isTypeOf ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain :Relation ;
+              rdfs:range :RelationType .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#restricts
+:restricts rdf:type owl:ObjectProperty ;
+           rdfs:domain :Restriction ;
+           rdfs:range :ProductAbstraction .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#structureOf
+:structureOf rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Structure ;
+             rdfs:range :CFamily .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily
+:CFamily rdf:type owl:Class ;
+         rdfs:subClassOf :Family ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasStructure ;
+                           owl:someValuesFrom :Structure
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasMembers ;
+                           owl:allValuesFrom :CVariantSet
+                         ] ;
+         owl:disjointWith :SFamily .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CProduct
+:CProduct rdf:type owl:Class ;
+          rdfs:subClassOf :Product ;
+          owl:disjointWith :SProduct .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation
+:CRelation rdf:type owl:Class ;
+           rdfs:subClassOf :Relation ;
+           owl:disjointWith :DRelation .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure
+:CStructure rdf:type owl:Class ;
+            rdfs:subClassOf :Structure ;
+            owl:disjointWith :DStructure .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet
+:CVariantSet rdf:type owl:Class ;
+             rdfs:subClassOf :VariantSet ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :memberOf ;
+                               owl:someValuesFrom :CFamily
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :memberOf ;
+                               owl:allValuesFrom :CFamily
+                             ] ;
+             owl:disjointWith :SVariantSet .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change
+:Change rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Class ;
+                              owl:unionOf ( :FamilyRemoval
+                                            :FamilySpecification
+                                            :QuantityChange
+                                          )
+                            ] .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet
+:ChangeSet rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ComponetOf
+:ComponetOf rdf:type owl:Class ;
+            rdfs:subClassOf :SHRelation ;
+            owl:disjointWith :DerivativeOf .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation
+:DRelation rdf:type owl:Class ;
+           rdfs:subClassOf :Relation .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure
+:DStructure rdf:type owl:Class ;
+            rdfs:subClassOf :Structure .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DerivativeOf
+:DerivativeOf rdf:type owl:Class ;
+              rdfs:subClassOf :SHRelation .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction
+:FRestriction rdf:type owl:Class ;
+              rdfs:subClassOf :Restriction ;
+              owl:disjointWith :PRestriction ,
+                               :VRestriction .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family
+:Family rdf:type owl:Class ;
+        rdfs:subClassOf :ProductAbstraction .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval
+:FamilyRemoval rdf:type owl:Class ;
+               rdfs:subClassOf :Change ;
+               owl:disjointWith :FamilySpecification ,
+                                :QuantityChange .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification
+:FamilySpecification rdf:type owl:Class ;
+                     rdfs:subClassOf :Change ;
+                     owl:disjointWith :QuantityChange .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#IncopatibleRest
+:IncopatibleRest rdf:type owl:Class ;
+                 rdfs:subClassOf :RestrictionType ;
+                 owl:disjointWith :MandatoryRest .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRel
+:MandatoryRel rdf:type owl:Class ;
+              rdfs:subClassOf :RelationType .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRest
+:MandatoryRest rdf:type owl:Class ;
+               rdfs:subClassOf :RestrictionType .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#OptionalRel
+:OptionalRel rdf:type owl:Class ;
+             rdfs:subClassOf :RelationType .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction
+:PRestriction rdf:type owl:Class ;
+              rdfs:subClassOf :Restriction ;
+              owl:disjointWith :VRestriction .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product
+:Product rdf:type owl:Class ;
+         rdfs:subClassOf :ProductAbstraction .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction
+:ProductAbstraction rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductionFactorCh
+:ProductionFactorCh rdf:type owl:Class ;
+                    rdfs:subClassOf :QuantityChange ;
+                    owl:disjointWith :QuantityPerunitCh .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange
+:QuantityChange rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:unionOf ( :ProductionFactorCh
+                                                    :QuantityPerunitCh
+                                                  )
+                                    ] ;
+                rdfs:subClassOf :Change .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityPerunitCh
+:QuantityPerunitCh rdf:type owl:Class ;
+                   rdfs:subClassOf :QuantityChange .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation
+:Relation rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:unionOf ( :CRelation
+                                              :DRelation
+                                            )
+                              ] .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType
+:RelationType rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Class ;
+                                    owl:unionOf ( :MandatoryRel
+                                                  :OptionalRel
+                                                  :SelectiveRel
+                                                )
+                                  ] .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction
+:Restriction rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Class ;
+                                   owl:unionOf ( :FRestriction
+                                                 :PRestriction
+                                                 :VRestriction
+                                               )
+                                 ] .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RestrictionType
+:RestrictionType rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Class ;
+                                       owl:unionOf ( :IncopatibleRest
+                                                     :MandatoryRest
+                                                   )
+                                     ] .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SFamily
+:SFamily rdf:type owl:Class ;
+         rdfs:subClassOf :Family .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SHRelation
+:SHRelation rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Class ;
+                                  owl:unionOf ( :ComponetOf
+                                                :DerivativeOf
+                                              )
+                                ] .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SProduct
+:SProduct rdf:type owl:Class ;
+          rdfs:subClassOf :Product .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SVariantSet
+:SVariantSet rdf:type owl:Class ;
+             rdfs:subClassOf :VariantSet .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SelectiveRel
+:SelectiveRel rdf:type owl:Class ;
+              rdfs:subClassOf :RelationType .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure
+:Structure rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:unionOf ( :CStructure
+                                               :DStructure
+                                             )
+                               ] .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction
+:VRestriction rdf:type owl:Class ;
+              rdfs:subClassOf :Restriction .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet
+:VariantSet rdf:type owl:Class ;
+            rdfs:subClassOf :ProductAbstraction .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f1
+:f1 rdf:type owl:NamedIndividual ,
+             :Family .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f2
+:f2 rdf:type owl:NamedIndividual ,
+             :Family ;
+    :hasMembers :v1 .
+
+
+###  http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#v1
+:v1 rdf:type owl:NamedIndividual ,
+             :VariantSet ;
+    :memberOf :f2 .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :FRestriction
+                :PRestriction
+                :VRestriction
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Family
+                :Product
+                :VariantSet
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :FamilyRemoval
+                :FamilySpecification
+                :QuantityChange
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :MandatoryRel
+                :OptionalRel
+                :SelectiveRel
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

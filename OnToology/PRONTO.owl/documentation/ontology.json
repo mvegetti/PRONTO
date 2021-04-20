@@ -1,0 +1,777 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasStructure"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRel"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#OptionalRel"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SelectiveRel"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasMembers"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#IncopatibleRest"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRest"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ComponetOf"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DerivativeOf"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRel"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#OptionalRel"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SelectiveRel"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductionFactorCh"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityPerunitCh"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#BelongsToCstructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SFamily"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SProduct"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SVariantSet"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ComponetOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SHRelation"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DerivativeOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DerivativeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SHRelation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FRestriction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilyRemoval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#FamilySpecification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#IncopatibleRest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RestrictionType"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRest"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#MandatoryRest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RestrictionType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#OptionalRel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#PRestriction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductionFactorCh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityPerunitCh"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityPerunitCh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#QuantityChange"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RestrictionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SFamily",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SHRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SVariantSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#SelectiveRel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid29"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VRestriction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VarinantSetMembership",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasProducts"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aComponet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsComponentIn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#aDerivative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsDerivativeIn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#affectedRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedModification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isModifiedBy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToDStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#appliedChange"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#componentOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#components",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CStructure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#BelongsToCstructure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#definesStructureOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivativeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isDerivedInto"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#derivatives",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DStructure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#belongsToDStructure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family" ],
+  "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasMembers" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#v1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#has",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#definesStructureOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasMembers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasProducts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Product"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasRestriction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#restricts"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#hasStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#structureOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isAffectedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Change"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#affectedRelation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isComposedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#componentOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isDerivedInto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsComponentIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CRelation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isIdentifiedAsDerivativeIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#DRelation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isModifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ChangeSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CVariantSet"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isTypeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Family"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#relationType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#RelationType"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#isTypeOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#restricts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Restriction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#ProductAbstraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#structureOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#Structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#CFamily"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#v1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#VariantSet" ],
+  "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#memberOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2010/1/ProntoAHSH.owl#f2"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#Thing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]
